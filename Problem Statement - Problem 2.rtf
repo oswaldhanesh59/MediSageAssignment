@@ -1,0 +1,130 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2708
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Medium;\f1\fnil\fcharset0 HelveticaNeue;\f2\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red224\green232\blue240;\red12\green14\blue18;\red0\green0\blue0;
+\red109\green109\blue109;}
+{\*\expandedcolortbl;;\cssrgb\c90196\c92941\c95294;\cssrgb\c5098\c6667\c9020;\cssrgb\c0\c0\c0;
+\cssrgb\c50196\c50196\c50196;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f0\b\fs30 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Problem2\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f1\b0\fs32 \cf2 Write an SQL query that reports the most experienced employees in each project. In case of a tie, report all employees with the maximum number of experience years.\
+Return the result table in any order.\
+\pard\pardeftab720\partightenfactor0
+\cf0 \strokec4 Table: project\cb1 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat3 \tamarb320 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2648\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1267\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+
+\f0\b \cf2 \strokec2 Column Name\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf2 Type\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat3 \tamarb320 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2648\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1267\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1\b0 \cf2 project_id\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 int\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat3 \tamarb320 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2648\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1267\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 employee_id\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 int\cell \lastrow\row
+\pard\pardeftab720\sa320\partightenfactor0
+\cf2 \cb3 (project_id, employee_id) is the primary key of this table.\
+employee_id is a foreign key to Employee table.\
+Each row of this table indicates that the employee with employee_id is working on the project with project_id.\
+\pard\pardeftab720\partightenfactor0
+\cf0 \strokec4 Table: Employee\cb1 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat3 \tamarb320 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth3070\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1603\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+
+\f0\b \cf2 \strokec2 Column Name\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf2 Type\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat3 \tamarb320 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth3070\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1603\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1\b0 \cf2 employee_id\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 int\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat3 \tamarb320 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth3070\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1603\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 name\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 varchar\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat3 \tamarb320 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth3070\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1603\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 experience_years\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 int\cell \lastrow\row
+\pard\pardeftab720\sa320\partightenfactor0
+\cf2 \cb3 employee_id is the primary key of this table. Each row of this table contains information about one employee.\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f2\fs27\fsmilli13600 \cf2 The query result format is in the following example.
+\f1\fs32 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat3 \tamarb320 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2063\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2452\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+
+\f0\b \cf2 \cb1 project_id\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf2 employee_id\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat3 \tamarb320 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2063\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2452\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1\b0 \cf2 1\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat3 \tamarb320 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2063\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2452\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 1\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 3\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat3 \tamarb320 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2063\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2452\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt120 \clpadl260 \clpadb120 \clpadr260 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 2\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 1\cell \lastrow\row
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f0\b \cf2 \cb3 Explanation
+\f1\b0 : Both employees with id 1 and 3 have the most experience among the employees of the first project. For the second project, the employee with id 1 has the most experience.\
+}
